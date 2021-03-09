@@ -1,8 +1,8 @@
 <template>
     <header class="header">
-        <h1>Контроль личного бюджета</h1>
+        <h1 class="header__title">Контроль личного бюджета</h1>
         <MenuApp/>
-        <span>Остаток по счету: 0</span>
+        <span class="header__balance">Остаток по счету: 0</span>
         <Auth/>
     </header>
 </template>

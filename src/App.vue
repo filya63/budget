@@ -20,6 +20,10 @@ export default defineComponent({
 * {
   margin: 0;
   padding: 0;
+  color: black;
+}
+a {
+  text-decoration: none;
 }
 body {
   background: #2c3e50;
