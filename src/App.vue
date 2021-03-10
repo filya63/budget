@@ -1,6 +1,6 @@
 <template>
   <HeaderApp/>
-  <main>
+  <main class="content">
     <router-view></router-view>
   </main>
 </template>
@@ -20,12 +20,23 @@ export default defineComponent({
 * {
   margin: 0;
   padding: 0;
-  color: black;
 }
 a {
   text-decoration: none;
 }
 body {
   background: #2c3e50;
+  min-height: 100vh;
+}
+.content {
+  color: lightgray;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  a {
+    color: lightgray;
+  }
 }
 </style>

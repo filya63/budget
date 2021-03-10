@@ -27,5 +27,8 @@ export default defineComponent({
         display: flex;
         justify-content: space-around;
         align-items: center;
+        a {
+            color: black;
+        }
     }
 </style>
