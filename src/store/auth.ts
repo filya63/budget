@@ -8,7 +8,7 @@ export default {
   actions: {
   },
   getters: {
-    getAuthStatus: (state: any): Boolean => {
+    getAuthStatus: (state: any):boolean => {
       return state.isAuth
     }
   }

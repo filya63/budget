@@ -1,19 +1,24 @@
 <template>
-  <router-link to="/history" v-if="isAuth">Твоё имя</router-link>
-  <router-link to="/sign-in" v-else>Авторизация/Регистрация</router-link>
+  <router-link :to="url">{{ nameBtn }}</router-link>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref, computed } from 'vue';
-import mapGetters from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default defineComponent({
   setup() {
-    const getters = mapGetters('auth', ['getAuthStatus']);
-    const isAuth:any = ref(false);
-    // const url = computed(():String => {
-    //   return isAuth ? '/history' : '/exin'
-    // });
+    let getAuthStatus = mapGetters('auth', ['getAuthStatus']);
+    let url = computed(():string => {
+      return getAuthStatus ? '/history' : '/sign-in';
+    });
+    let nameBtn = computed(():string => {
+      return getAuthStatus ? 'Имя профиля' : 'Вход/Регистрация';
+    })
+    return {
+      url,
+      nameBtn
+    }
   }
 })
 </script>
