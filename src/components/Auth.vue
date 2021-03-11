@@ -5,9 +5,11 @@
 
 <script lang="ts">
 import { defineComponent, ref, computed } from 'vue';
+import mapGetters from 'vuex';
 
 export default defineComponent({
   setup() {
+    const getters = mapGetters('auth', ['getAuthStatus']);
     const isAuth:any = ref(false);
     // const url = computed(():String => {
     //   return isAuth ? '/history' : '/exin'
