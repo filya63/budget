@@ -17,7 +17,7 @@
       <span class="registation-data__error hide">* заполни поле верно!</span>
     </label>
     <button class="registration__btn">Зарегистрироваться</button>
-    <router-link to="/sign-in">Вернуться к авторизации</router-link>
+    <router-link to="/sign-in">Вернуться к авторизации..</router-link>
   </form>
 </template>
 
