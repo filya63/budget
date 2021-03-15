@@ -4,16 +4,16 @@
 
 <script lang="ts">
 import { defineComponent, ref, computed } from 'vue';
-import { mapGetters } from 'vuex';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   setup() {
-    let getAuthStatus = mapGetters('auth', ['getAuthStatus']);
-    let url = computed(():string => {
-      return getAuthStatus ? '/history' : '/sign-in';
+    const store = useStore();
+    const url = computed(():string => {
+      return store.getters['auth/getAuthStatus'] ? '/history' : '/sign-in';
     });
-    let nameBtn = computed(():string => {
-      return getAuthStatus ? 'Имя профиля' : 'Вход/Регистрация';
+    const nameBtn = computed(():string => {
+      return store.getters['auth/getAuthStatus'] ? 'Имя профиля' : 'Вход/Регистрация';
     })
     return {
       url,
