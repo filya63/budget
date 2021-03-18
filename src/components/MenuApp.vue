@@ -1,9 +1,8 @@
-<template>
-  <nav class="menu">
-    <router-link class="menu__item" to="/history">История</router-link>
-    <router-link class="menu__item" to="/exin">Внести расходы/доходы</router-link>
-    <router-link class="menu__item" to="/graph">График</router-link>
-  </nav>
+<template lang="pug">
+nav.menu
+  router-link(to="/history").menu__item История
+  router-link(to="/exin").menu__item Внести расходы/доходы
+  router-link(to="/graph").menu__item График
 </template>
 
 <style lang="scss">

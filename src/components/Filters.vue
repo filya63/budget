@@ -1,18 +1,11 @@
-<template>
-    <form class="history-filters">
-        <label class="history-filters__item">
-        Сортировка по категории расходов:
-            <select class="history-filters__item-box">
-                <option class="history-filters__item-box-options" v-for="item in categoryExpenses" :key="item.id">{{ item.name }}</option>
-            </select>
-        </label>
-        <label>
-        Сортировка по категории доходов:
-        <select class="history-filters__item-box">
-            <option class="history-filters__item-box-options" v-for="item in categoryIncome" :key="item.id">{{ item.name }}</option>
-        </select>
-        </label>
-    </form>
+<template lang="pug">
+form.history-filters
+    label.history-filters__item Сортировка по категории расходов:
+        select.history-filters__item-box
+            option(v-for="item in categoryExpenses" :key="item.id").history-filters__item-box-options {{ item.name }}
+    label.history-filters__item Сортировка по категории доходов:
+    select.history-filters__item-box
+        option(v-for="item in categoryIncome" :key="item.id").history-filters__item-box-options {{ item.name }}
 </template>
 
 <script lang="ts">

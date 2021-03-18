@@ -1,3 +1,3 @@
-<template>
-  <h2>Расходы/доходы</h2>
+<template lang="pug">
+h2 Расходы/доходы
 </template>

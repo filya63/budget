@@ -1,5 +1,5 @@
-<template>
-  <router-link :to="url">{{ nameBtn }}</router-link>
+<template lang="pug">
+router-link(:to="url") {{ nameBtn }}
 </template>
 
 <script lang="ts">

@@ -1,8 +1,7 @@
-<template>
-  <HeaderApp/>
-  <main class="content">
-    <router-view></router-view>
-  </main>
+<template lang="pug">
+header-app
+main.content
+  router-view
 </template>
 
 <script lang='ts'>
@@ -11,8 +10,8 @@ import HeaderApp from '@/components/HeaderApp.vue';
 
 export default defineComponent({
   components: {
-    HeaderApp
-    }
+    HeaderApp,
+  }
 });
 </script>
 

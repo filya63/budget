@@ -1,10 +1,9 @@
-<template>
-    <header class="header">
-        <h1 class="header__title">Контроль личного бюджета</h1>
-        <MenuApp/>
-        <span class="header__balance">Остаток по счету: 0</span>
-        <Auth/>
-    </header>
+<template lang="pug">
+header.header
+    h1.header__title Контроль личного бюджета
+    menu-app
+    span.header__balance Остаток по счету: 0
+    auth
 </template>
 
 <script lang="ts">

@@ -1,3 +1,3 @@
-<template>
-    <h2>График</h2>
+<template lang="pug">
+h2 График
 </template>
