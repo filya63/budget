@@ -3,9 +3,9 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
 
-const firebaseConfig = {
+const firebaseConfig:object = {
     apiKey: "AIzaSyDhoyyMUnReE0Mej8TeAV7oRUtGaREtyxE",
     authDomain: "budget-7780c.firebaseapp.com",
     projectId: "budget-7780c",

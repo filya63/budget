@@ -9,6 +9,7 @@ import { defineComponent } from 'vue';
 import HeaderApp from '@/components/HeaderApp.vue';
 
 export default defineComponent({
+  
   components: {
     HeaderApp,
   }
