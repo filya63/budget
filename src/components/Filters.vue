@@ -15,7 +15,7 @@ import { useStore } from 'vuex';
 
 export default defineComponent({
     props: ['filter'],
-    setup(props):object {
+    setup():object {
         const store = useStore();
 
         const categoryExpenses:any = computed(():any => store.getters['settingsProfile/getCategoryExpenses']);
