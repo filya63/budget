@@ -1,6 +1,6 @@
 <template lang="pug">
 header.header
-    h1.header__title Контроль личного бюджета
+    h1.header__title Личная бухгалтерия
     menu-app
     span.header__balance Остаток по счету: 0
     auth
